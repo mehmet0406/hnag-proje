@@ -1,0 +1,906 @@
+    * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "Open Sans", Sans-serif;
+        }
+     /*Navbar*/
+      .nav-links  a{
+            text-decoration: none;
+        }
+     .nav-links   li{
+            list-style: none;
+        }
+        nav{
+            display:flex ;
+            justify-content: space-around;
+            align-items: center;
+            height: 13vh;
+            width: 100%;
+            background-color:white;
+        }
+      .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 25%;
+      }
+      .nav-links  a{
+        color: #515151;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+      .nav-links  a:hover{
+        color: #e01c23;;
+      }
+      .bosluk-nav{
+       height: 100%;
+        width: 10%;
+      }
+      .burger{
+        display: none;
+        cursor: pointer;
+      }
+      .burger .line1,
+      .burger .line2,
+      .burger .line3{
+        width: 24px;
+        height: 3px;
+        background-color: black;
+        transition: 0.3s ease;
+      }
+      .burger .line2{
+        margin: 3px 0px;
+      }
+      @media screen and (max-width: 1024px) {
+        body{
+            overflow-x: hidden;
+        }
+        .burger{
+            display: block;
+        }
+        .nav-links{
+            position: absolute;
+            top: 0vh;
+            right: 0;
+            width: 30%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background:white;
+            align-items: center;
+            box-shadow: -2px 0px 16px 0px rgb(0 0 0 / 12%);
+            justify-content: space-around;
+            transform: translateX(100%);
+            transition: 0.5s ease; 
+        }
+        .close .line1{
+            transform: rotate(-45deg) translate(-5px,3px);
+            transition: 0.3s ease;
+        }
+        .close .line2{
+            opacity: 0;
+        }
+        .close .line3{
+            transform: rotate(45deg) translate(-5px,-3px);
+            transition: 0.3s ease;
+        }
+        .nav-active{
+            transform: translateX(0);
+        }
+      }
+      .navbar{
+        position: fixed;
+      }
+        /*Sondajdan Projeye*/
+         .section-bir {
+            padding-top: 10vh;
+            margin: 0px;      
+            padding-left: 15vh;
+        }
+        .main-bir{
+            padding-top:0vh;
+            margin:0px;
+            background-image: url("/arkaplan_sondaj.png");
+            height: 90vh;
+            min-height: 70vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            max-width: 200vh;  
+        }
+        .elemanlar-bir {
+            padding-top: 170px;
+            padding-left: 60px;
+        }
+        .elemanlar-tittle-bir {
+            font-size: 34px;
+            font-family: "Open Sans", Sans-serif;
+            letter-spacing: 0.3px;
+            color: #222121;
+            padding: 0 0 20px;
+            line-height: 4rem;
+        }
+        .elemanlar-text-bir {
+            color: #515151;
+            font-family: "Open Sans", Sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5rem;
+            letter-spacing: 0.2px;
+            padding: 0 0 30px;
+        }
+        .elemanlar-buton-bir {
+            height: 8vh;
+            width: 30vh;
+        }
+        .elemanlar-buton-bir button {
+            height: 100%;
+            width: 100%;
+            background-color: #e01c23;
+            color: rgb(255, 255, 255);
+            font-size: 19px;
+            border-radius: 25px;
+            border: transparent;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+        .elemanlar-logo-bir {
+            padding: 40px 0;
+        }
+        @media screen and (max-width: 1024px) {
+            .section-bir {
+            padding-top: 0vh;
+            margin: 0px;      
+            padding-left: 0vh;
+        }
+        .main-bir{
+            padding-top:10vh;
+            margin:0px;
+            background-image: url("/arkaplan_sondaj.png");
+            height: 100%;
+            width: 100%;    
+        }
+        .elemanlar-bir {
+            padding-top: 50px;
+            padding-left: 0px;
+        }
+        }
+        @media screen and (max-width: 768px){
+    .main-bir{
+            padding-top: 10vh;
+            margin:0px;
+            background-image: none;
+            height: 100%;
+            width: 100%;
+        }
+        .elemanlar-tittle-bir {
+            font-size: 24px;
+            line-height: 3rem;
+        }
+        .elemanlar-text-bir {
+            font-size: 14px;
+     }
+     .elemanlar-buton-bir {
+            height: 8vh;
+            width: 100%; 
+        }
+        }
+        /*Cardlar*/
+        .card-iki {
+            height:  100%;
+            width: 100%;
+            background-color: transparent;
+         }
+       .card-bosluk-iki{
+        height: 5vh;
+       }
+        .main-iki {
+            padding: 0px;
+            margin: 0px;
+            height: 100%;
+        }
+        .elemanlar-iki {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+        }
+        .elemanlar-body-iki{
+            margin: 20px;
+            width: 45vh;
+            text-align: center;
+            background-color: white;
+            border-radius: 35px;
+            box-shadow: 0px 4px 10px 0px rgb(218 191 196);
+         }
+        .elemanlar-body-iki:hover{
+            box-shadow:0 8px 12px 0 rgb(0,0,0,0.6) ;
+            transition: all 0.5s;
+        }
+        .elemanlar-iki img {
+            height: 80px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .elemanlar-p-iki {
+            color: #515151;
+            font-size: 18px;
+            line-height: 2rem;
+            letter-spacing: 0.2px;
+        }
+        .elemanlar-tittle-iki {
+            color: #252525;
+            font-size: 20px;
+            padding: 10px;
+            letter-spacing: 0.3px;
+        }
+        .elemanlar-text-p{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        @media screen and (max-width:768px) {
+            .elemanlar-iki {
+            display: block;
+       }
+            .elemanlar-body-iki{
+            width: 80%;
+        margin: 15vh 7vh;
+        text-align: center;
+        }
+        .elemanlar-tittle-iki{
+            font-size: 16px;
+        }
+        .elemanlar-p-iki{
+            font-size: 14px;
+            max-width: 30vh;
+            text-align: center;
+            align-items: center;
+        }
+        .elemanlar-p-iki p{
+            font-size: 14px;
+            text-align: center;
+            align-items: center;
+        }
+       .elemanlar-text-p{
+        width: 100%;
+ align-items: center;
+       }
+        .card-bosluk-iki{
+        height: 1vh;
+       }
+       .elemanlar-iki img {
+            height: 60px;
+        }
+        }
+        /*Hangi işleri Yapıyoruz*/
+        .container-uc{
+    padding: 0px;
+    margin: 0px;
+    height: 80vh;
+    padding: 20vh 5vh;
+    display: flex;
+    background-color: #EFEEEE;
+     }
+        .main-uc{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+      }
+    .elemanlar-uc{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.resim-uc{
+    height: 80%;
+    width: 45%;
+    max-width: 70vh;
+    min-width: 50vh;
+}
+.resim-uc img{
+    height: 100%;
+    width: 100%;
+  border-radius: 40px;  
+}
+.yazi-uc{
+    height: 100%;
+    width: 30%;
+    max-width: 60vh;
+    min-width: 35vh;
+}
+.yazi-uc .h1-uc{
+    padding: 0 0 15px;
+    color: #252525;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+.yazi-uc .par-uc{
+ letter-spacing: 0.2px;
+    max-width:80vh;
+    color: #515151;
+    font-size: 17px;
+    padding: 0 0 15px;
+}
+.yazi-uc .liste-uc{
+    letter-spacing: 0.2px;
+    line-height: 23px;
+    color: #515151;
+    font-size: 17px;
+    padding: 0 20px 20px;
+}
+.yazi-uc .button-uc{
+    text-align: center;
+}
+.bosluk-uc{
+    width: 15vh;
+}
+.elemanlar-buton-bir {
+            height: 8vh;
+            width: 30vh;
+        }
+        .elemanlar-buton-bir button {
+            height: 100%;
+            width: 100%;
+            background-color: #e01c23;
+            color: rgb(255, 255, 255);
+            font-size: 19px;
+            border-radius: 25px;
+            border: transparent;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+@media screen and (max-width:768px) {
+    .main-uc{
+        height: 85vh;
+        padding-top: 15vh;
+    }
+    .container-uc{
+    height: 95vh;
+    padding:5vh 0vh ;
+}
+.yazi-uc{
+    height: 80%;
+    width: 90%;
+    max-width: 100vh;
+    padding-left: 5vh;
+}
+    .elemanlar-uc{
+        flex-direction: column-reverse;
+}
+.elemanlar-buton-bir{
+    display: none;
+}
+.resim-uc{
+    height: 100%;
+    width: 95%;
+  padding-left: 5%;
+    max-width: 120vh;
+}
+}
+/*Makine Parkımz*/
+.section-dort{
+            height: 80vh;
+            width: 99%;
+          background-color:transparent;
+        }
+.main-dort{
+    width: 100%;
+    display: flex;
+    padding: 180px 0;
+}
+.elemanlar-dort{
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+.yazi-dort .icerik-dort{
+    min-width: 50vh;
+}
+.yazi-dort .h1-dort{
+    color: #252525;
+    padding: 0  0 20px;
+    font-size: 22px;
+}
+.yazi-dort .ul-dort{
+    color: #515151;
+    padding: 0 18px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+}
+.resim-dort{
+    height: 80%;
+    width: 45%;
+    max-width: 70vh;
+    min-width: 50vh;
+}
+.bosluk-dort{
+    height: 100%;
+    width: 15vh;
+}
+.resim-dort img{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+@media screen and (max-width:768px) {
+    .elemanlar-dort{
+  display: block;
+  margin-top: 0vh;
+}
+    .yazi-dort .icerik-dort{
+    padding:5% 5%;
+    height: 28vh;
+}
+.resim-dort{
+    height: 45vh;
+    width: 95%;
+    max-width: 110vh;
+    padding-left: 2vh;
+}
+.main-dort{
+    width: 100%;
+    display: flex;
+    padding: 0% 0;
+}
+.bosluk-dort{
+   display: none;
+}
+.main-dort{
+    padding: 180px 0;
+}
+.main-dort{
+    padding: 55px 0;
+}
+.yazi-dort .h1-dort{
+letter-spacing: 0.3px;
+    font-size:20px;
+}
+.yazi-dort .ul-dort{
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+}
+/*Biz Kimiz*/
+.section{
+            height: 80vh;
+            width: 99%;
+        }
+        .main{
+            height: 100%;
+            border: 1px solid transparent;
+            width: 100%;
+        }
+        .elemanlar{
+            height: 60%;
+            width: 100%;
+         margin-top: 20vh;
+         display: flex;
+         justify-content: center;
+        }
+        .image{
+            height: 100%;
+            width: 40%;
+            max-width: 80vh;
+        }
+        .text{
+            height: 100%;
+            width: 40%;
+        }
+     .bosluk{
+        height: 100%;
+        width: 0vh;
+     }
+     .image .img-img{
+        height: 100%;
+        width: 90%;
+     }
+     .image .img-img img{
+        height: 80%;
+        width: 80%;
+     }
+.text .tittle{
+    height: 15%;
+    width: 100%;
+}
+.text .tittle h1{
+    height: 100%;
+    font-size: 30px;
+  
+    letter-spacing: 1px;
+}
+.text .p-text{
+    max-width: 75vh; 
+    width:95%;
+}
+.text .p-text p{
+    font-size: 16px;
+    color: #515151;
+    line-height: 24px;
+    line-height: 28px;
+    letter-spacing: 0.3px;
+}
+@media screen and (max-width:768px) {
+        .elemanlar{
+       flex-direction: column-reverse;
+      margin-top:20vh;
+      height: 80%;
+        }
+        .text .p-text{
+    max-width: none; 
+}
+.text .p-text p{
+  font-size: 16px;
+  line-height: 24px;
+}
+        .text{
+            height: 100%;
+            width: 90%;
+            padding-left: 5%;
+        }
+        .text .tittle h1{
+            font-size: 25px;
+        }
+        .text .tittle{
+            padding: 0vh 0vh;
+            margin-bottom: 2vh;
+        }
+        button{
+            display: none;
+        }
+        .bosluk{
+        height: 15vh;
+        width: 15%;
+     }
+        .image{
+            height:50%;
+            margin-top: 5vh;
+            width: 95%;
+            max-width: 120vh;
+            min-width: 80vh;
+            text-align: center;
+        }
+        .image .img-img img{
+        height: 90%;
+        width: 70%;
+     }
+}
+
+/*Ekibimizle Tanışın*/
+.card-alti {
+            height:  100%;
+            width: 100%;
+            background-color: transparent;
+            padding-top: 5vh;
+         }
+       .card-bosluk-alti{
+        height: 5vh;
+       }
+        .main-alti {
+            padding: 0px;
+            margin: 0px;
+            height: 100%;
+        }
+        .elemanlar-alti {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+        }
+        .elemanlar-body-alti{
+            margin: 20px;
+            width: 65vh;
+
+            background-color: white;
+            border-radius: 35px;
+            box-shadow: 0px 4px 10px 0px rgb(218 191 196);
+         }
+    
+        .elemanlar-alti img {
+            height: 110px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+      
+            border-radius: 35px;
+        }
+        .elemanlar-p-alti {
+            color: #515151;
+            font-size: 18px;
+            line-height: 2rem;
+            letter-spacing: 0.2px;
+        }
+        .elemanlar-tittle-alti {
+            color: #252525;
+            font-size: 20px;
+            padding: 10px;
+            letter-spacing: 0.3px;
+        }
+        .elemanlar-text-p-alti{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .card-image-name-alti{
+            display: flex;
+    
+          
+        }
+        .elemanlarbir-image-alti{
+           
+         
+            margin-left: 2vh;
+        }
+        .elemanlar-tittle-alti{
+         
+            width: 80%;
+            text-align: left;
+            padding-left: 5vh;
+        }
+        .elemanlar-text-p-alti{
+           
+            text-align: left;
+            padding-left: 2vh;
+            display: block;
+           
+        }
+        .elemanlar-text-p-alti p{
+            font-size: 16px;
+            max-width: 55vh;
+        }
+        .card-1_iletisim-alti{
+    height: 8vh;
+  
+}
+.elemanlar-tittle-alti .card-meslek-alti{
+    color: #750404;
+}
+.card-1_iletisim-alti .iletisim-alti{
+    height: 5vh;
+    width:auto;
+ display: flex;
+ padding-left: 2vh;
+}
+.card-1_iletisim-alti .iletisim-alti .number_text-alti{
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+.card-1_iletisim-alti .iletisim-alti .number_text-alti .number_img-alti{
+    height: auto;
+    width: 20%;
+    padding-right: 1vh;
+    padding-top: 1vh;
+    text-align: right
+}
+.card-1_iletisim-alti .iletisim-alti .number_text-alti .number-alti{
+    height: 100%;
+    width: 80%;
+    color:#750404;
+    font-size: 18px;
+    font-family: "Open Sans", Sans-serif;
+}
+.card-1_iletisim-alti .iletisim-alti .number_text-alti .number-alti h3{
+    padding-top: 1vh;
+}
+.card-1_iletisim-alti .iletisim-alti .links-alti{
+    height: 100%;
+    width: 50%;
+   display: flex;
+  justify-content: end;
+}
+.card-1_iletisim-alti .iletisim-alti  .links-alti img{
+    height: 30px;
+    width: 30px;
+}
+.card-1_iletisim-alti .iletisim-alti  .links-alti .fb-alti {
+    padding-right: 25px;
+}
+
+.card-1_iletisim-alti .iletisim-alti  .links-alti .lnk-alti{
+    padding-right: 25px;
+}
+.number_text-alti .number_img-alti img{
+    height: 4vh;
+   
+}
+.number_text-alti .number-alti{
+    padding-top: 2.5vh;
+}
+.tittle-alti{
+ 
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 7vh;
+   
+}
+@media screen and (max-width: 768px) {
+    .elemanlar-alti {
+            display:block;
+           
+        }
+        .tittle-alti{
+            font-size: 18px;
+            text-align: left;
+            padding-left: 4vh;
+            padding-top: 6vh;
+            padding-bottom: 2vh;
+        }
+        .elemanlar-body-alti{
+            margin: 20px;
+            width: 90%;
+         }
+         .elemanlar-text-alti p{
+            font-size: 16px;
+         max-width: none;
+        }
+        .elemanlar-text-p-alti p{
+            font-size: 16px;
+            max-width: none;
+        }
+ 
+}
+/*Footer*/
+.main-footer {
+            padding: 0px;
+            margin: 0px;
+            height: 55vh;
+            background-color: #EFEEEE;
+        }
+        .elemanlar-footer {
+            height: 50vh;
+            width: 100%;
+          
+            padding-top: 8vh;
+            display: flex;
+            justify-content: center;
+         }
+        .logo_kismi-footer {
+            height: 100%;
+            width: 50%;
+            min-width:60vh;
+            max-width: 80vh;
+   
+         }
+        .logo-footer {
+            height: 30%;
+            width: 100%;
+        
+        }
+        .bosluk-footer {
+            height: 40%;
+          
+        }
+        .reklam_alani-footer {
+            height: 20%;
+            width: 100%;
+        }
+        .logo-footer .logomuz-footer {
+            height: 80%;
+            width: 40%;
+            margin-left: 20%;
+        }
+        .logo-footer .logomuz-footer img {
+            height: 100%;
+            width: 100%;
+          
+        }
+        .reklam_alani-footer .reklam_img-footer {
+            height: auto;
+            width: 50%;
+            margin-left: 20%;
+            min-width: 40vh
+        }
+        .reklam_alani-footer .reklam_img-footer img {
+            height: 100%;
+            width: 100%;
+        }
+        .bilgiler-footer {
+            height: 40vh;
+            width: 50%;
+        }
+        .button_alani-footer {
+            height: 25%;
+            width: 100%;
+        }
+        .bosluuk-footer {
+            height: 4vh;
+        }
+        .bosluk_yeri-footer {
+            height: 4vh;
+        }
+        .bilgiler_alani-footer {
+            height: 60%;
+            width: 100%;
+        }
+        .bilgiler_alani-footer .mail-footer {
+            height: 4vh;
+            width: 100%;
+            display: flex;
+        }
+        .bilgiler_alani-footer .konum-footer {
+            height: 4vh;
+            width: 100%;
+            display: flex;
+        }
+
+        .bilgiler_alani-footer .meslek_bilgisi-footer {
+            height: 4vh;
+            width: 100%;
+            display: flex;
+        }
+        .h3-footer{
+             padding-left: 2vh;
+             padding-top: 0.5vh;
+             color: #515151;
+              font-size: 14px;
+              font-family: "Open Sans", Sans-serif;;
+            }
+.reklam_img-footer2{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .elemanlar-footer {
+            display: block;
+         }
+    .reklam_alani-footer{
+        display: none;
+    }
+    .logo_kismi-footer {
+            height: 50%;
+            width: 100%;
+            min-width:none;
+            max-width: none;
+         }
+         .logo-footer {
+            height:70%;
+            width: 100%;
+      display: flex;
+        }
+             .logomuz-footer{
+            justify-content: center;
+            text-align: center;
+            min-width: 40vh;
+        }
+        .bilgiler-footer {
+            width: 100%;
+        }
+       .bilgiler_alani-footer h3 {
+       font-size: 14px;
+       line-height: 24px;
+       letter-spacing: 0.5px;
+       }
+       .button_alani-footer{
+        display: none;
+       }
+       .reklam_img-footer2{
+        display: flex;
+        justify-content: center;
+       }
+       .reklam_img-footer2{
+        padding-top: 3vh;
+       }
+       .reklam_img-footer2 img{
+        height: 2.5vh;
+       }
+       .bilgiler_alani-footer{
+        padding-left: 3vh;
+       }
+       .h3-footer{
+        padding-left: 5vh;
+        padding-top: 0px;
+        max-width: 40vh;
+       }
+       .main-footer {
+            height: 70vh;
+        }
+}
